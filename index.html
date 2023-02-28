@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color:#da9abd ;
+    color: #09090e;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #f5b3d4;
+    color: #0a0a14;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #aff5d8;
+}
+.aside {
+    background-color:  #a8e7f0;
+    color: #0c0c13;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color:#be70ab ;
+    color: #05050a;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+body {
+    background-repeat: no-repeat;
+    
+}
+
+
+    @media only screen and (min-width: 768px) {
+  .imagen {
+    content: url("img/logo2.png");
+  }
+}
+</style>
+</head>
+<body style="background-color: antiquewhite;">
+
+<div class="header">
+  <h1 style="color: rgb(66, 4, 33); font-family:'Courier New', Courier, monospace; font-size: 50px; text-align: center;">Unidad 2</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 menu">
+  <ul>
+    <li><a href="https://paola200218.github.io/practicas/">Practica 1</a></li>
+    <li><a href="https://paola200218.github.io/practica2/">Practica 2</a></li>
+    <li><a href="https://paola200218.github.io/practica3/">Practica 3</a></li>
+    <li><a href="https://paola200218.github.io/practica4/">Practica 4</a></li>
+    <li><a href="https://paola200218.github.io/practica5/">Practica 5</a></li>
+    <li><a href="https://paola200218.github.io/practica6/">Practica 6</a></li>
+    <li><a href="https://paola200218.github.io/practica7/">Practica 7</a></li>
+  </ul>
+</div>
+
+<div class="col-6">
+  <div align="center"><h1>MI CV</h1> </div>
+  
+  <b>Video</b><br><br>
+<br>
+  <video width="320px" height="280px" controls >
+    <source src="img/mivideo.mp4">
+  </video>
+<br>
+  <b>Direcci&oacute;n</b><br><br>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15086.981427445788!2d-97.01736628195191!3d19.030939328790744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4e0c4fcd8bdf3%3A0x49a974993eb401f5!2zVG9tYXRsw6FuLCBWZXIu!5e0!3m2!1ses!2smx!4v1676919349524!5m2!1ses!2smx" 
+  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+
+  <div align="center"><h3><b>Datos</b></h3></div><br>
+
+    <h2><b>Datos personales</b></h2>
+<ul style="list-style-type:square">
+  <li>Nombre: <b>Sebastian Garcia Paola</b></li>
+  <li>Fecha de nacimiento: <b>18/junio/2002</b></li>
+  <li>Lugar de nacimiento: <b>Tomatlan, Veracruz</b></li>
+</ul>
+
+    <h2><b>Formaci&oacute;n acad&eacute;mica</b></h2>
+<ul style="list-style-type:square">
+  <li>2008: <b>Escuela primaria Amado Nervo</b></li>
+  <li>2014: <b>Escuela Telesecundaria Alvaro Galvez y fuentes</b></li>
+  <li>2017: <b>CBTA.99</b></li>
+  <li>2020: <b>Tecnol&oacute;gico Nacional de M&eacute;xico Campus Orizaba</b></li>
+</ul>
+
+    <h2><b>Experiencia laboral</b></h2>
+<ul style="list-style-type:square">
+  
+  <li> <b>Programador en Java</b></li>
+  <li> <b>Programador de App Web</b></li>
+</ul>
+</div>
+
+<div class="col-3 right">
+  <div class="aside">
+    <h2>Curriculum vitae</h2>
+    <img src="img/logo.png" class="imagen"  width="200px" height="100px">
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Cambiar el tama&ntilde;o paola sebastian garcia</p>
+</div>
+
+</body>
+</html>
